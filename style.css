@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B4251;
+    color: #F5F0E8;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a2a35;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    color: #F5F0E8;
+}
+
+nav {
+    background-color: #1a2a35;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#meny-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #F5F0E8;
+    border-radius: 3px;
+}
+
+.meny-länkar {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.meny-länkar a {
+    color: #F5F0E8;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: #2B4251;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.meny-länkar a:hover {
+    background-color: #5B7D87;
+}
+
+footer {
+    background-color: #1a2a35;
+    padding: 20px 40px;
+    text-align: left;
+    color: #F5F0E8;
+    font-size: 14px;
+}
+
+.hero {
+    background-image: url('bilder/hav.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome {
+    background-color: #91B3BC;
+    color: #1a2a35;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.banner {
+    background-image: url('bilder/studio.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+.tjanster-hem {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 40px;
+    background-color: #1a2a35;
+    gap: 20px;
+}
+
+.kort {
+    background-color: #2B4251;
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.kort h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #91B3BC;
+}
+
+a.kort {
+    text-decoration: none;
+    color: #F5F0E8;
+    display: block;
+}
+
+a.kort:hover {
+    background-color: #5B7D87;
+}
+
+.om-innehall {
+    display: flex;
+    gap: 60px;
+    padding: 60px 40px;
+    align-items: center;
+}
+
+.om-bild {
+    flex: 1;
+    background-image: url('bilder/freya.png');
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 400px;
+    border-radius: 4px;
+}
+
+.om-text {
+    flex: 1;
+}
+
+.om-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #91B3BC;
+}
+
+.om-text p {
+    margin-bottom: 15px;
+}
+
+.tjanst-rad {
+    display: flex;
+    gap: 60px;
+    padding: 60px 40px;
+    align-items: center;
+    border-bottom: 1px solid #5B7D87;
+}
+
+.tjanst-bild {
+    flex: 1;
+    height: 350px;
+    border-radius: 4px;
+}
+
+.portratt-bild {
+    background-image: url('bilder/porträtt-tjej.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.brollop-bild {
+    background-image: url('bilder/par.png');
+    background-size: cover;
+    background-position: 50% 20%;
+}
+
+.barn-bild {
+    background-image: url('bilder/barn1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.frilans-bild {
+    background-image: url('bilder/frilans1.png');
+    background-size: cover;
+    background-position: 50% 20%;
+}
+
+.tjanst-text {
+    flex: 1;
+}
+
+.tjanst-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #91B3BC;
+}
+
+.tjanst-text p {
+    margin-bottom: 15px;
+}
+
+.portfolio-rubrik {
+    background-color: #1a2a35;
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio-rubrik h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    color: #91B3BC;
+}
+
+.galleri {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.galleri-rad {
+    display: flex;
+    gap: 20px;
+}
+
+.galleri-bild {
+    border: 1px solid #5B7D87;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+}
+
+.portratt {
+    flex: 1;
+    height: 400px;
+}
+
+.landskap {
+    width: 100%;
+    height: 250px;
+}
+
+.galleri-bild-1 {
+    background-image: url('bilder/porträtt-tjej.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.galleri-bild-2 {
+    background-image: url('bilder/porträtt-kille1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.galleri-bild-3 {
+    background-image: url('bilder/par2.png');
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.galleri-bild-4 {
+    background-image: url('bilder/barn2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.galleri-bild-5 {
+    background-image: url('bilder/porträtt-man.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.galleri-bild-6 {
+    background-image: url('bilder/frilans2.png');
+    background-size: cover;
+    background-position: 50% 28%;
+}
+
+.kontakt-rubrik {
+    background-color: #1a2a35;
+    padding: 40px;
+    text-align: center;
+}
+
+.kontakt-rubrik h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    color: #91B3BC;
+}
+
+.kontakt-innehall {
+    display: flex;
+    gap: 60px;
+    padding: 60px 40px;
+    align-items: flex-start;
+}
+
+.kontakt-info {
+    flex: 1;
+}
+
+.kontakt-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #91B3BC;
+}
+
+.kontakt-info p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.kontakt-formular {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kontakt-formular label {
+    font-size: 14px;
+    color: #91B3BC;
+    letter-spacing: 1px;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+    background-color: #1a2a35;
+    border: 1px solid #5B7D87;
+    color: #F5F0E8;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+.kontakt-formular button {
+    background-color: #5B7D87;
+    color: #F5F0E8;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+.kontakt-formular button:hover {
+    background-color: #91B3BC;
+    color: #1a2a35;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .meny-länkar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1a2a35;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    #meny-toggle:checked~.meny-länkar {
+        display: flex;
+    }
+
+    .om-innehall,
+    .tjanst-rad,
+    .tjanst-rad.omvand,
+    .kontakt-innehall {
+        flex-direction: column;
+    }
+
+    .galleri-rad {
+        flex-direction: column;
+    }
+
+    .tjanst-bild,
+    .om-bild {
+        width: 100%;
+        height: 250px;
+    }
+}
