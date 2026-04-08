@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freya Photos | Portfolio</title>
+    <!-- Google Fonts - Cinzel för rubriker, Lato för brödtext -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
@@ -12,9 +13,12 @@
 </head>
 
 <body>
+    <!-- Sidhuvud med logotyp -->
     <header>
         <h1>Freya Photos</h1>
     </header>
+
+    <!-- Navigering med hamburgermeny för mobil -->
     <nav>
         <input type="checkbox" id="meny-toggle">
         <label for="meny-toggle" class="hamburger">
@@ -30,23 +34,32 @@
             <a href="Kontakt.html">Kontakt</a>
         </div>
     </nav>
+
     <main>
-        <section class="galleri">
+        <!-- Bildgalleri med porträtt och landskapsbilder -->
+        <div class="galleri">
+            <!-- Första raden med två porträttbilder -->
             <div class="galleri-rad">
                 <div class="galleri-bild portratt galleri-bild-1"></div>
                 <div class="galleri-bild portratt galleri-bild-2"></div>
             </div>
+            <!-- Bred landskapsbild som bryter av -->
             <div class="galleri-bild landskap galleri-bild-3"></div>
+            <!-- Andra raden med två porträttbilder -->
             <div class="galleri-rad">
                 <div class="galleri-bild portratt galleri-bild-4"></div>
                 <div class="galleri-bild portratt galleri-bild-5"></div>
             </div>
+            <!-- Avslutande landskapsbild -->
             <div class="galleri-bild landskap galleri-bild-6"></div>
-        </section>
+        </div>
     </main>
+
+    <!-- Sidfot med copyright -->
     <footer>
         <p>Freya Photos &copy; 2024</p>
     </footer>
+
 </body>
 
 </html>

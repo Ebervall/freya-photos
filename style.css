@@ -1,9 +1,13 @@
+/* ===== RESET ===== */
+/* Nollställer webbläsarens inbyggda marginaler och padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== GRUNDSTYLING ===== */
+/* Bakgrundsfärg, textfärg och typsnitt för hela sidan */
 body {
     background-color: #2B4251;
     color: #F5F0E8;
@@ -12,6 +16,7 @@ body {
     line-height: 1.6;
 }
 
+/* ===== HEADER ===== */
 header {
     background-color: #1a2a35;
     padding: 20px 40px;
@@ -19,12 +24,14 @@ header {
     align-items: center;
 }
 
+/* Logotypens typsnitt och storlek */
 header h1 {
     font-family: 'Cinzel', serif;
     font-size: 28px;
     color: #F5F0E8;
 }
 
+/* ===== NAVIGERING ===== */
 nav {
     background-color: #1a2a35;
     padding: 15px 40px;
@@ -33,10 +40,12 @@ nav {
     justify-content: space-around;
 }
 
+/* Döljer checkbox som styr hamburgermeny */
 #meny-toggle {
     display: none;
 }
 
+/* Hamburgermenyns tre streck, dold på desktop */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -44,6 +53,7 @@ nav {
     cursor: pointer;
 }
 
+/* Varje streck i hamburgarmenyn */
 .hamburger span {
     display: block;
     width: 25px;
@@ -52,6 +62,7 @@ nav {
     border-radius: 3px;
 }
 
+/* Navlänkarnas container */
 .meny-länkar {
     display: flex;
     gap: 30px;
@@ -59,6 +70,7 @@ nav {
     justify-content: space-around;
 }
 
+/* Styling för varje navlänk */
 .meny-länkar a {
     color: #F5F0E8;
     text-decoration: none;
@@ -71,10 +83,12 @@ nav {
     border: 1px solid transparent;
 }
 
+/* Hover-effekt på navlänkar */
 .meny-länkar a:hover {
     background-color: #5B7D87;
 }
 
+/* ===== FOOTER ===== */
 footer {
     background-color: #1a2a35;
     padding: 20px 40px;
@@ -83,6 +97,8 @@ footer {
     font-size: 14px;
 }
 
+/* ===== HEM - HERO ===== */
+/* Stor välkomstbild som täcker hela bredden */
 .hero {
     background-image: url('bilder/hav.png');
     background-size: cover;
@@ -94,6 +110,7 @@ footer {
     text-align: center;
 }
 
+/* ===== HEM - VÄLKOMSTSEKTION ===== */
 .welcome {
     background-color: #91B3BC;
     color: #1a2a35;
@@ -107,12 +124,15 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Max-bredd på texten för bättre läsbarhet */
 .welcome p {
     max-width: 700px;
     margin: 0 auto;
     font-size: 20px;
 }
 
+/* ===== BANNER ===== */
+/* Bred bildbanderoll som används som visuell brytpunkt */
 .banner {
     background-image: url('bilder/studio.png');
     background-size: cover;
@@ -121,6 +141,8 @@ footer {
     width: 100%;
 }
 
+/* ===== HEM - TJÄNSTEKORT ===== */
+/* Container för de fyra tjänstekorten på startsidan */
 .tjanster-hem {
     display: flex;
     justify-content: space-evenly;
@@ -129,6 +151,7 @@ footer {
     gap: 20px;
 }
 
+/* Enskilt tjänstekort */
 .kort {
     background-color: #2B4251;
     padding: 30px;
@@ -144,6 +167,7 @@ footer {
     color: #91B3BC;
 }
 
+/* Kortets länkstyling, tar bort understreck och ändrar färg */
 a.kort {
     text-decoration: none;
     color: #F5F0E8;
@@ -154,6 +178,8 @@ a.kort:hover {
     background-color: #5B7D87;
 }
 
+/* ===== OM OSS ===== */
+/* Tvåkolumnslayout med bild och text bredvid varandra */
 .om-innehall {
     display: flex;
     gap: 60px;
@@ -161,11 +187,12 @@ a.kort:hover {
     align-items: center;
 }
 
+/* Bilden på fotografen */
 .om-bild {
     flex: 1;
     background-image: url('bilder/freya.png');
     background-size: cover;
-    background-position: 50% 20%;
+    background-position: center 10%;
     height: 400px;
     border-radius: 4px;
 }
@@ -185,6 +212,8 @@ a.kort:hover {
     margin-bottom: 15px;
 }
 
+/* ===== TJÄNSTER ===== */
+/* Varje tjänst visas som en rad med bild och text */
 .tjanst-rad {
     display: flex;
     gap: 60px;
@@ -193,14 +222,16 @@ a.kort:hover {
     border-bottom: 1px solid #5B7D87;
 }
 
+/* Bildcontainer för varje tjänst */
 .tjanst-bild {
     flex: 1;
     height: 350px;
     border-radius: 4px;
 }
 
+/* Bakgrundsbilder för respektive tjänst */
 .portratt-bild {
-    background-image: url('bilder/porträtt-tjej.png');
+    background-image: url('bilder/portratt-tjej.png');
     background-size: cover;
     background-position: center;
 }
@@ -238,6 +269,7 @@ a.kort:hover {
     margin-bottom: 15px;
 }
 
+/* ===== PORTFOLIO ===== */
 .portfolio-rubrik {
     background-color: #1a2a35;
     padding: 40px;
@@ -250,6 +282,7 @@ a.kort:hover {
     color: #91B3BC;
 }
 
+/* Galleriet använder flexbox för att stapla rader */
 .galleri {
     padding: 40px;
     display: flex;
@@ -257,11 +290,13 @@ a.kort:hover {
     gap: 20px;
 }
 
+/* En rad med två porträttbilder bredvid varandra */
 .galleri-rad {
     display: flex;
     gap: 20px;
 }
 
+/* Grundstyling för alla galleribilder */
 .galleri-bild {
     border: 1px solid #5B7D87;
     border-radius: 4px;
@@ -269,52 +304,46 @@ a.kort:hover {
     background-position: center;
 }
 
-.portratt {
+/* Porträttformat, högre än bred */
+.galleri-bild.portratt {
     flex: 1;
     height: 400px;
 }
 
-.landskap {
+/* Landskapsformat, bred och låg */
+.galleri-bild.landskap {
     width: 100%;
     height: 250px;
 }
 
+/* Bakgrundsbilder för varje galleribild */
 .galleri-bild-1 {
-    background-image: url('bilder/porträtt-tjej.png');
-    background-size: cover;
-    background-position: center;
+    background-image: url('bilder/portratt-tjej.png');
 }
 
 .galleri-bild-2 {
-    background-image: url('bilder/porträtt-kille1.png');
-    background-size: cover;
-    background-position: center;
+    background-image: url('bilder/portratt-kille1.png');
 }
 
 .galleri-bild-3 {
     background-image: url('bilder/par2.png');
-    background-size: cover;
     background-position: 50% 30%;
 }
 
 .galleri-bild-4 {
     background-image: url('bilder/barn2.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .galleri-bild-5 {
-    background-image: url('bilder/porträtt-man.png');
-    background-size: cover;
-    background-position: center;
+    background-image: url('bilder/portratt-man.png');
 }
 
 .galleri-bild-6 {
     background-image: url('bilder/frilans2.png');
-    background-size: cover;
     background-position: 50% 28%;
 }
 
+/* ===== KONTAKT ===== */
 .kontakt-rubrik {
     background-color: #1a2a35;
     padding: 40px;
@@ -327,6 +356,7 @@ a.kort:hover {
     color: #91B3BC;
 }
 
+/* Tvåkolumnslayout med kontaktinfo och formulär */
 .kontakt-innehall {
     display: flex;
     gap: 60px;
@@ -350,6 +380,7 @@ a.kort:hover {
     font-size: 18px;
 }
 
+/* Formuläret staplar fält vertikalt med flexbox */
 .kontakt-formular {
     flex: 1;
     display: flex;
@@ -363,6 +394,7 @@ a.kort:hover {
     letter-spacing: 1px;
 }
 
+/* Styling för inputfält och textarea */
 .kontakt-formular input,
 .kontakt-formular textarea {
     background-color: #1a2a35;
@@ -374,6 +406,7 @@ a.kort:hover {
     font-family: 'Lato', sans-serif;
 }
 
+/* Skicka-knappen */
 .kontakt-formular button {
     background-color: #5B7D87;
     color: #F5F0E8;
@@ -391,11 +424,16 @@ a.kort:hover {
     color: #1a2a35;
 }
 
+/* ===== MOBILANPASSNING ===== */
+/* Aktiveras när skärmen är smalare än 768px */
 @media (max-width: 768px) {
+
+    /* Visar hamburgarmenyn på mobil */
     .hamburger {
         display: flex;
     }
 
+    /* Döljer navlänkarna tills hamburgarmenyn klickas */
     .meny-länkar {
         display: none;
         position: absolute;
@@ -408,10 +446,12 @@ a.kort:hover {
         gap: 10px;
     }
 
+    /* Visar menyn när checkboxen är ikryssad */
     #meny-toggle:checked~.meny-länkar {
         display: flex;
     }
 
+    /* Staplar kolumnlayouter vertikalt på mobil */
     .om-innehall,
     .tjanst-rad,
     .tjanst-rad.omvand,
@@ -419,13 +459,59 @@ a.kort:hover {
         flex-direction: column;
     }
 
+    /* Freya-bilden visas under texten på mobil */
+    .om-bild {
+        width: 100%;
+        height: 350px;
+        order: 2;
+    }
+
+    .om-text {
+        order: 1;
+    }
+
+    /* Gallerirader staplas vertikalt */
     .galleri-rad {
         flex-direction: column;
     }
 
-    .tjanst-bild,
-    .om-bild {
+    /* Porträttbilder i galleriet anpassas till full bredd */
+    .galleri-bild.portratt {
+        height: 300px;
+        width: 100%;
+        flex: none;
+    }
+
+    /* Landskapsbilder i galleriet anpassas till full bredd */
+    .galleri-bild.landskap {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* Tjänstebilder anpassas till full bredd */
+    .tjanst-bild {
         width: 100%;
         height: 250px;
+    }
+
+    /* Specifika tjänstebilder får höjd på mobil */
+    .portratt-bild,
+    .brollop-bild,
+    .barn-bild,
+    .frilans-bild {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* Tjänstekorten staplas vertikalt */
+    .tjanster-hem {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    /* Länkkorten tar full bredd på mobil */
+    a.kort {
+        width: 100%;
+        box-sizing: border-box;
     }
 }

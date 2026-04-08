@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freya Photos | Tjänster</title>
+    <!-- Google Fonts - Cinzel för rubriker, Lato för brödtext -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
@@ -12,9 +13,12 @@
 </head>
 
 <body>
+    <!-- Sidhuvud med logotyp -->
     <header>
         <h1>Freya Photos</h1>
     </header>
+
+    <!-- Navigering med hamburgermeny för mobil -->
     <nav>
         <input type="checkbox" id="meny-toggle">
         <label for="meny-toggle" class="hamburger">
@@ -30,49 +34,57 @@
             <a href="Kontakt.html">Kontakt</a>
         </div>
     </nav>
+
     <main>
-        <main>
-            <section class="banner"></section>
+        <!-- Bred bildbanderoll högst upp -->
+        <div class="banner"></div>
 
-            <section class="tjanst-rad" id="portratt">
-                <div class="tjanst-bild portratt-bild"></div>
-                <div class="tjanst-text">
-                    <h2>Porträtt</h2>
-                    <p>Professionell porträttfotografering i studio eller utomhus. Perfekt för LinkedIn, CV eller helt
-                        enkelt för att ha en fin bild på dig själv.</p>
-                </div>
-            </section>
+        <!-- Porträtttjänst med bild till vänster -->
+        <section class="tjanst-rad" id="portratt">
+            <div class="tjanst-bild portratt-bild"></div>
+            <div class="tjanst-text">
+                <h2>Porträtt</h2>
+                <p>Professionell porträttfotografering i studio eller utomhus. Perfekt för LinkedIn, CV eller helt
+                    enkelt för att ha en fin bild på dig själv.</p>
+            </div>
+        </section>
 
-            <section class="tjanst-rad omvand" id="brollop">
-                <div class="tjanst-text">
-                    <h2>Bröllop</h2>
-                    <p>Din stora dag förtjänar att bevaras för alltid. Jag följer er genom hela dagen och fångar alla
-                        känslor, från nervositeten innan vigseln till glädjen på festen.</p>
-                </div>
-                <div class="tjanst-bild brollop-bild"></div>
-            </section>
+        <!-- Bröllopstjänst med bild till höger -->
+        <section class="tjanst-rad omvand" id="brollop">
+            <div class="tjanst-text">
+                <h2>Bröllop</h2>
+                <p>Din stora dag förtjänar att bevaras för alltid. Jag följer er genom hela dagen och fångar alla
+                    känslor, från nervositeten innan vigseln till glädjen på festen.</p>
+            </div>
+            <div class="tjanst-bild brollop-bild"></div>
+        </section>
 
-            <section class="tjanst-rad" id="barn">
-                <div class="tjanst-bild barn-bild"></div>
-                <div class="tjanst-text">
-                    <h2>Barn</h2>
-                    <p>Barn växer upp så snabbt. Låt mig fånga deras personlighet och glädje i naturliga och lekfulla
-                        bilder ni kommer skatta hela livet.</p>
-                </div>
-            </section>
+        <!-- Barnfotografering med bild till vänster -->
+        <section class="tjanst-rad" id="barn">
+            <div class="tjanst-bild barn-bild"></div>
+            <div class="tjanst-text">
+                <h2>Barn</h2>
+                <p>Barn växer upp så snabbt. Låt mig fånga deras personlighet och glädje i naturliga och lekfulla bilder
+                    ni kommer skatta hela livet.</p>
+            </div>
+        </section>
 
-            <section class="tjanst-rad omvand" id="frilans">
-                <div class="tjanst-text">
-                    <h2>Frilans</h2>
-                    <p>Frilansfotograf för lokala tidningar och företag. Snabb leverans och professionellt resultat för
-                        alla typer av uppdrag.</p>
-                </div>
-                <div class="tjanst-bild frilans-bild"></div>
-            </section>
-        </main>
-        <footer>
-            <p> Freya Photos &copy;</p>
-        </footer>
+        <!-- Frilanstjänst med bild till höger -->
+        <section class="tjanst-rad omvand" id="frilans">
+            <div class="tjanst-text">
+                <h2>Frilans</h2>
+                <p>Frilansfotograf för lokala tidningar och företag. Snabb leverans och professionellt resultat för alla
+                    typer av uppdrag.</p>
+            </div>
+            <div class="tjanst-bild frilans-bild"></div>
+        </section>
+    </main>
+
+    <!-- Sidfot med copyright -->
+    <footer>
+        <p>Freya Photos &copy; 2024</p>
+    </footer>
+
 </body>
 
 </html>
